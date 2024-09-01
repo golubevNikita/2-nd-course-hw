@@ -1,0 +1,15 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 600px);
+}
+
+$color-dark: rgb(32, 32, 39);
+$color-light: rgb(255, 255, 255);
+$color-light-grey: rgb(247, 247, 247);
