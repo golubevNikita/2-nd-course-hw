@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>hw-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="scss/styles.css"/>
 </head>
+
 <body>
-    <h1>1</h1>
+    <header class="header center">
+        <h1 class="header__title">
+            Добро пожаловать <br>
+            на мой сайт мини-игр
+        </h1>
+
+        <p class="header__text">
+            Тебе предстоит пройти несколько увлекательных игр.
+            Если готов, нажимай <span>«Поехали!»</span> и <span>приступай</span>.
+        </p>
+    
+        <a class="header__button" href="#more-about-games">Поехали!</a>    
+    </header>
+
+    <main class="main center">
+        <section class="main__games-info games-info">
+            <h2 class="games-info__title" id="more-about-games">
+                Об играх
+            </h2>
+
+            <p class="games-info__text">
+                В моей коллекции представлено 6 игр на разные темы.<br>
+                Игры несложные — в них может поиграть каждый.<br>
+                Все игры доступны для пользования.
+            </p>
+
+            <div class="games-info__container">
+                <a class="games-info__game-box game-box" href="#">
+                    <img class="game-box__image" src="images/predict-number.jpeg" alt="game picture">
+    
+                    <div class="game-box__game-number">
+                        Игра №1
+                    </div>
+    
+                    <h3 class="game-box__game-name">
+                        Угадай число
+                    </h3>
+                </a>
+
+                <a class="games-info__game-box game-box" href="#">
+                    <img class="game-box__image" src="images/rock-paper-scissors.jpeg" alt="game picture">
+    
+                    <div class="game-box__game-number">
+                        Игра №4
+                    </div>
+    
+                    <h3 class="game-box__game-name">
+                        Камень,<br>
+                        ножницы,<br>
+                        бумага
+                    </h3>
+                </a>
+    
+                <a class="games-info__game-box game-box" href="#">
+                    <img class="game-box__image" src="images/simple-arithmetic.jpeg" alt="game picture">
+    
+                    <div class="game-box__game-number">
+                        Игра №2
+                    </div>
+    
+                    <h3 class="game-box__game-name">
+                        Простая арифметика
+                    </h3>
+                </a>
+        
+                <a class="games-info__game-box game-box" href="#">
+                    <img class="game-box__image" src="images/simple-quiz.jpeg" alt="game picture">
+    
+                    <div class="game-box__game-number">
+                        Игра №5
+                    </div>
+    
+                    <h3 class="game-box__game-name">
+                        Простая викторина
+                    </h3>
+                </a>
+
+                <a class="games-info__game-box game-box" href="#">
+                    <img class="game-box__image" src="images/turn-the-text-over.jpeg" alt="game picture">
+    
+                    <div class="game-box__game-number">
+                        Игра №3
+                    </div>
+    
+                    <h3 class="game-box__game-name">
+                        Переверни текст
+                    </h3>
+                </a>
+                
+                <a class="games-info__game-box game-box" href="#">
+                    <img class="game-box__image" src="images/random-colors-generator.jpeg" alt="game picture">
+    
+                    <div class="game-box__game-number">
+                        Игра №6
+                    </div>
+    
+                    <h3 class="game-box__game-name">
+                        Генератор случайных цветов
+                    </h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer center">
+        <p class="footer__rights">
+            Все права защищены.
+        </p>
+    </footer>
 </body>
 </html>

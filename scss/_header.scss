@@ -1,0 +1,61 @@
+
+.header {
+    box-sizing: border-box;
+    background: url(../images/header-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    padding-top: 196px;
+
+    &__title {
+        color: $color-dark;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 24px;
+        width: 768px;
+    }
+
+    &__text {
+        color: $color-dark;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 48px;
+        width: 720px;
+    }
+
+    &__button {
+        box-sizing: border-box;
+        display: block;
+        text-decoration: none;
+        width: 247px;
+        height: 66px;
+        padding: 16px 48px;
+        border: 1px solid $color-dark;
+        border-radius: 60px;
+        background: $color-dark;
+        color: $color-light;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0px;
+        text-align: center;
+        transition: 0.4s;
+
+        @media (hover: hover) {
+            &:hover {
+                cursor: pointer;
+                box-sizing: border-box;
+                border-color: rgb(0, 0, 0);
+                color: rgb(0, 0, 0);
+                background: transparent;
+            }
+        }
+    }
+}

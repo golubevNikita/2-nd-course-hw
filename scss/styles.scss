@@ -1,0 +1,99 @@
+
+@import
+    "var",
+    "header",
+    "footer";
+
+.main {
+    background-color: $color-dark;
+    padding-top: 94px;
+    padding-bottom: 144px;
+}
+
+.games-info {
+    &__title {
+        color: $color-light;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: $color-light;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 72px;
+        width: 788px;
+    }
+
+    &__container {
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        gap: 32px;
+        height: 1070px;
+    }
+}
+
+.game-box {
+    box-sizing: border-box;
+    display: block;
+    width: 378px;
+    min-height: 473px;
+    max-height: 551px;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    background: $color-light;
+    border-radius: 30px;
+    text-decoration: none;
+    padding-bottom: 36px;
+    transition: 0.3s;
+
+    @media (hover: hover) {
+        &:hover {
+            transform: scale(1.02);
+            cursor: auto;
+        }
+    }
+
+    &__image {
+        width: 378px;
+        height: 314px;
+        border-radius: 30px;
+    }
+
+    &__game-number {
+        box-sizing: border-box;
+        width: 108px;
+        height: 36px;
+        border-radius: 52.58px;
+        background: $color-light-grey;
+        color: $color-dark;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        line-height: 36px;
+        padding-left: 16px;
+        margin-left: 32px;
+    }
+
+    &__game-name {
+        color: $color-dark;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-left: 32px;
+        width: 314px;
+    }
+}
