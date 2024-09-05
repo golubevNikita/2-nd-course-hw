@@ -21,7 +21,8 @@
 
         <p class="header__text">
             Тебе предстоит пройти несколько увлекательных игр.
-            Если готов, нажимай <span>«Поехали!»</span> и <span>приступай</span>.
+            Если готов, нажимай <span class="header__text header__text_bold">«Поехали!»</span>
+            и <span class="header__text header__text_bold">приступай</span>.
         </p>
     
         <a class="header__button" href="#more-about-games">Поехали!</a>    
@@ -40,7 +41,7 @@
             </p>
 
             <div class="games-info__container">
-                <a class="games-info__game-box game-box" href="#">
+                <a class="games-info__game-box game-box" href="#predict-number">
                     <img class="game-box__image" src="images/predict-number.jpeg" alt="game picture">
     
                     <div class="game-box__game-number">
@@ -52,7 +53,7 @@
                     </h3>
                 </a>
 
-                <a class="games-info__game-box game-box" href="#">
+                <a class="games-info__game-box game-box" href="#rock-paper-scissors">
                     <img class="game-box__image" src="images/rock-paper-scissors.jpeg" alt="game picture">
     
                     <div class="game-box__game-number">
@@ -66,7 +67,7 @@
                     </h3>
                 </a>
     
-                <a class="games-info__game-box game-box" href="#">
+                <a class="games-info__game-box game-box" href="#simple-arithmetic">
                     <img class="game-box__image" src="images/simple-arithmetic.jpeg" alt="game picture">
     
                     <div class="game-box__game-number">
@@ -78,7 +79,7 @@
                     </h3>
                 </a>
         
-                <a class="games-info__game-box game-box" href="#">
+                <a class="games-info__game-box game-box" href="#simple-quiz">
                     <img class="game-box__image" src="images/simple-quiz.jpeg" alt="game picture">
     
                     <div class="game-box__game-number">
@@ -90,7 +91,7 @@
                     </h3>
                 </a>
 
-                <a class="games-info__game-box game-box" href="#">
+                <a class="games-info__game-box game-box" href="#turn-the-text-over">
                     <img class="game-box__image" src="images/turn-the-text-over.jpeg" alt="game picture">
     
                     <div class="game-box__game-number">
@@ -102,7 +103,7 @@
                     </h3>
                 </a>
                 
-                <a class="games-info__game-box game-box" href="#">
+                <a class="games-info__game-box game-box" href="#random-colors-generator">
                     <img class="game-box__image" src="images/random-colors-generator.jpeg" alt="game picture">
     
                     <div class="game-box__game-number">
@@ -115,6 +116,110 @@
                 </a>
             </div>
         </section>
+
+        <div class="main__separate-line"></div>
+
+        <section class="main__mini-games mini-games">
+            <h2 class="mini-games__title">Мини-игры</h2>
+
+            <div class="mini-games__container">
+                <div class="mini-games__the-game" id="predict-number">
+                    <div class="mini-games__textbox">
+                        <h3 class="mini-games__name">
+                            Угадай число
+                        </h3>
+        
+                        <p class="mini-games__description">
+                            Попробуй угадать случайное<br>число от 1 до 100.
+                        </p>
+        
+                        <a class="mini-games__button" href="#">Играть!</a>
+                    </div>
+    
+                    <img class="mini-games__image" src="images/predict-number-big.jpeg" alt="game picture">
+                </div>
+
+                <div class="mini-games__the-game" id="simple-arithmetic">
+                    <div class="mini-games__textbox">
+                        <h3 class="mini-games__name">
+                            Простая арифметика
+                        </h3>
+        
+                        <p class="mini-games__description">
+                            Попробуй решить простые арифметические задачи.
+                        </p>
+        
+                        <a class="mini-games__button" href="#">Играть!</a>
+                    </div>
+    
+                    <img class="mini-games__image mini-games__image_reverse" src="images/simple-arithmetic-big.jpeg" alt="game picture">
+                </div>
+    
+                <div class="mini-games__the-game" id="turn-the-text-over">
+                    <div class="mini-games__textbox">
+                        <h3 class="mini-games__name">
+                            Переверни текст
+                        </h3>
+        
+                        <p class="mini-games__description">
+                            Попробуй ввести текст, который<br>будет перевернут.
+                        </p>
+        
+                        <a class="mini-games__button" href="#">Играть!</a>
+                    </div>
+    
+                    <img class="mini-games__image" src="images/turn-the-text-over-big.jpeg" alt="game picture">
+                </div>
+        
+                <div class="mini-games__the-game" id="simple-quiz">
+                    <div class="mini-games__textbox">
+                        <h3 class="mini-games__name">
+                            Викторина
+                        </h3>
+        
+                        <p class="mini-games__description">
+                            Отвечай на вопросы викторины<br>с вариантами ответов.
+                        </p>
+        
+                        <a class="mini-games__button" href="#">Играть!</a>
+                    </div>
+    
+                    <img class="mini-games__image mini-games__image_reverse" src="images/simple-quiz-big.jpeg" alt="game picture">
+                </div>
+    
+                <div class="mini-games__the-game" id="rock-paper-scissors">
+                    <div class="mini-games__textbox">
+                        <h3 class="mini-games__name">
+                            Камень,<br>ножницы,<br>бумага
+                        </h3>
+        
+                        <p class="mini-games__description">
+                            Сыграй в популярную игру<br>против компьютера.
+                        </p>
+        
+                        <a class="mini-games__button" href="#">Играть!</a>
+                    </div>
+    
+                    <img class="mini-games__image" src="images/rock-paper-scissors-big.jpeg" alt="game picture">
+                </div>
+
+                <div class="mini-games__the-game" id="random-colors-generator">
+                    <div class="mini-games__textbox">
+                        <h3 class="mini-games__name">
+                            Генератор случайных<br>цветов
+                        </h3>
+        
+                        <p class="mini-games__description">
+                            Игра, в которой при клике на кнопку фон страницы меняется на случайный.
+                        </p>
+        
+                        <a class="mini-games__button" href="#">Играть!</a>
+                    </div>
+    
+                    <img class="mini-games__image mini-games__image_reverse" src="images/random-colors-generator-big.jpeg" alt="game picture">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer center">
@@ -122,5 +227,7 @@
             Все права защищены.
         </p>
     </footer>
+
+    <script src="JS/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,120 @@
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
+    }
+
+    .header {
+        background: url(../images/header-background-mobile.jpeg);
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 147px;
+
+        &__title {
+            width: 296px;
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
+        }
+
+        &__text {
+            width: 296px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        &__button {
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+        }
+    }
+
+    .games-info {
+        display: none;
+
+        // Изменить место, куда ведёт якорная ссылка (чтобы при нажатии на кнопку «Поехали!»
+        // вместо скролла до блока «Об играх» происходил скролл до блока «Мини-игры») 
+        // возможно, кажется, только при помощи JS. На данном этапе я не могу реализовать
+        // этот функционал грустная скобочка(
+    }
+
+    .main {
+        padding-top: 48px;
+        padding-bottom: 48px;
+
+        &__separate-line {
+            display: none;
+        }
+    }
+
+    .mini-games {
+        margin-top: 0;
+
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+            margin-bottom: 40px;
+        }
+
+        &__the-game {
+            flex-direction: column;
+            height: 100%;
+        }
+
+        &__image {
+            width: 343px;
+            height: 284px;
+            order: -1;
+        }
+
+        &__textbox {
+            width: 343px;
+            padding: 29px 29px 32px 29px;
+            height: 100%;
+        }
+
+        &__name {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__description {
+            margin-top: 16px;
+            margin-bottom: 32px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__button {
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+        }
+    }
+
+    .footer {
+        height: 100px;
+
+        &__rights {
+            padding-top: 40px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

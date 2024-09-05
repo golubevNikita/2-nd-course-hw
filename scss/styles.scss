@@ -2,15 +2,23 @@
 @import
     "var",
     "header",
-    "footer";
+    "footer",
+    "games";
 
 .main {
     background-color: $color-dark;
     padding-top: 94px;
     padding-bottom: 144px;
+
+    &__separate-line {
+        content: "";
+        border-top: 0.5px solid $color-dark;
+    }
 }
 
 .games-info {
+    margin-bottom: 50px;
+
     &__title {
         color: $color-light;
         font-size: 64px;
@@ -97,3 +105,6 @@
         width: 314px;
     }
 }
+
+@import
+    "mobile";
