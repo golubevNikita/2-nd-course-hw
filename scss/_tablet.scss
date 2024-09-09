@@ -1,0 +1,171 @@
+
+@media (max-width: 1199px) {
+    .center {
+        padding-left: calc(50% - 395px);
+        padding-right: calc(50% - 395px);
+    }
+
+    .header {
+        background: url(../images/header-background-mobile.jpeg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 230px;
+
+        &__title {
+            width: 490px;
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
+        }
+
+        &__text {
+            width: 430px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        &__button {
+            width: 300px;
+            height: 55px;
+            font-size: 16px;
+        }
+    }
+
+    .main {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .games-info {
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        &__container {
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 100%;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        &__big-star {
+            display: none;
+        }
+    
+        &__mid-star {
+            display: none;
+        }
+    
+        &__small-star {
+            display: none;
+        }
+    }
+
+    .game-box {
+        width: 344px;
+
+        &__image {
+            width: 100%;
+            height: auto;
+        }
+
+        &__game-name {
+            width: 285px;
+        }
+    }
+
+    .mini-games {
+        margin-top: 0;
+
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        &__container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        &__the-game {
+            position: relative;
+            flex-direction: column;
+            height: auto;
+            width: 344px;
+            height: 465px;
+        }
+
+        &__image {
+            width: 100%;
+            height: auto;
+            order: -1;
+        }
+
+        &__textbox {
+            width: 344px;
+            padding: 30px;
+            height: 100%;
+        }
+
+        &__name {
+            font-size: 32px;
+            line-height: 39px;
+            position: absolute;
+            top: 32px;
+            color: $color-dark;
+            width: 285px;
+        }
+
+        &__description {
+            margin-top: 0;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__button {
+            position: absolute;
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+            bottom: 16px;
+            left: 29px;
+        }
+
+        &__mid-star {
+            display: none;
+        }
+    
+        &__small-star {
+            display: none;
+        }
+    }
+
+    .footer {
+        height: 100px;
+
+        &__rights {
+            padding-top: 40px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

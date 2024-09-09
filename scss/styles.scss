@@ -9,6 +9,7 @@
     background-color: $color-dark;
     padding-top: 94px;
     padding-bottom: 144px;
+    overflow: hidden;
 
     &__separate-line {
         content: "";
@@ -17,6 +18,7 @@
 }
 
 .games-info {
+    position: relative;
     margin-bottom: 50px;
 
     &__title {
@@ -48,9 +50,29 @@
         gap: 32px;
         height: 1070px;
     }
+
+    &__big-star {
+        position: absolute;
+        top: 17px;
+        right: -230px;
+    }
+
+    &__mid-star {
+        position: absolute;
+        bottom: 550px;
+        left: -80px;
+    }
+
+    &__small-star {
+        position: absolute;
+        bottom: 625px;
+        left: -95px;
+    }
 }
 
 .game-box {
+    position: relative;
+    z-index: 100;
     box-sizing: border-box;
     display: block;
     width: 378px;
@@ -107,4 +129,5 @@
 }
 
 @import
+    "tablet",
     "mobile";
