@@ -1,5 +1,6 @@
 
 .mini-games {
+    position: relative;
     margin-top: 46px;
 
     &__title {
@@ -92,6 +93,32 @@
 
         &_reverse {
             order: -1;
+        }
+    }
+
+    &__mid-star {
+        position: absolute;
+        top: 90px;
+        right: -65px;
+        transform: scale(1.2);
+
+        &_bottom {
+            top: 3309px;
+            right: -55px;
+            transform: scale(1.2) rotate(-5deg);
+        }
+    }
+
+    &__small-star {
+        position: absolute;
+        top: 50px;
+        right: 5px;
+        transform: scale(1.1);
+
+        &_bottom {
+            top: 3350px;
+            right: 32px;
+            transform: scale(1.1) rotate(-5deg);
         }
     }
 }
