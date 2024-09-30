@@ -34,10 +34,10 @@ const myArray = [1, 3, 5, 10, 20];
 console.log(myArray.join(' '));
 
 // Задание 4
-const myArray = new Array;
+const myArray = new Array();
 
 for (let i = 0; i < 3; i++) {
-    const iterationArr = new Array;
+    const iterationArr = new Array();
     for (let i = 0; i < 3; i++) {
         iterationArr[i] = 1;
     };
@@ -64,7 +64,7 @@ function extendArray (increasing, dataArr) {
 const myArray = [9, 8, 7, 'a', NaN, true, 6, 5];
 
 function isANumber (arr) {
-    iterationArr = new Array;
+    iterationArr = new Array();
     for (el of arr) {
         if ((typeof(el) === 'number') && !Number.isNaN(el)) {
             console.log(el, typeof(el));
@@ -116,7 +116,7 @@ const myArray = [[1, 2, 3],[4, 5, 6]];
 
 function superArrOnly (array) {
 
-    const simpleArr = new Array;
+    const simpleArr = new Array();
 
     for (element of array) {
         for (i of element) {
@@ -132,10 +132,8 @@ console.log(superArrOnly(myArray));
 // Задание 10
 const myArray = [9, 8, 7, 6, 5];
 
-for (let i = 0; i < myArray.length; i++) {
-    if (i !== (myArray.length - 1)) {
-        console.log(i, myArray[i] + myArray[i + 1]);
-    };
+for (let i = 0; i < myArray.length - 1; i++) {
+    console.log(i, myArray[i] + myArray[i + 1]);
 };
 
 // Задание 11
@@ -168,7 +166,7 @@ numbersOnlyArr = myArray.filter(el => el < 0);
 console.log(numbersOnlyArr);
 
 // Задание 14
-const myArray1 = new Array;
+const myArray1 = new Array();
 
 for (let i = 0; i < 10; i++) {
     myArray1[i] = Math.floor(Math.random() * 11);
@@ -176,7 +174,7 @@ for (let i = 0; i < 10; i++) {
 
 function onlyEven(el) {
     console.log(el % 2)
-    if (el % 2 == 0) {
+    if (el % 2 === 0) {
         return el;
     };
 };
@@ -186,7 +184,7 @@ myArray2 = myArray1.filter(onlyEven);
 console.log(myArray1, myArray2);
 
 // Задание 15
-const myArray1 = new Array;
+const myArray1 = new Array();
 
 for (let i = 0; i < 6; i++) {
     myArray1[i] = Math.floor(Math.random() * 10) + 1;

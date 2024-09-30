@@ -14,7 +14,7 @@ function simpleArithmetic() {
             generatedTask = `Реши задачу:   ${arrayOfNumbers[0]} ${randomSymbol} ${arrayOfNumbers[1]}`;
             result = arrayOfNumbers[0] + arrayOfNumbers[1];
             answer = +prompt(generatedTask);
-            if (result == answer) {
+            if (result === answer) {
                 alert('верный ответ');
                 break;
             } else {
@@ -23,7 +23,7 @@ function simpleArithmetic() {
                     while (result !== answer) {
                         answer = +prompt(generatedTask);
 
-                        if (result == answer) {
+                        if (result === answer) {
                             alert('верный ответ');
                             break;
                         };
@@ -38,10 +38,10 @@ function simpleArithmetic() {
             };
 
         case '-':
-            generatedTask = `Реши задачу: ${arrayOfNumbers[0]} ${randomSymbol} ${arrayOfNumbers[1]}`;
+            generatedTask = `Реши задачу:   ${arrayOfNumbers[0]} ${randomSymbol} ${arrayOfNumbers[1]}`;
             result = arrayOfNumbers[0] - arrayOfNumbers[1];
             answer = +prompt(generatedTask);
-            if (result == answer) {
+            if (result === answer) {
                 alert('верный ответ');
                 break;
             } else {
@@ -50,7 +50,7 @@ function simpleArithmetic() {
                     while (result !== answer) {
                         answer = +prompt(generatedTask);
                         
-                        if (result == answer) {
+                        if (result === answer) {
                             alert('верный ответ');
                             break;
                         };
@@ -65,10 +65,10 @@ function simpleArithmetic() {
             };
 
         case '*':
-            generatedTask = `Реши задачу: ${arrayOfNumbers[0]} ${randomSymbol} ${arrayOfNumbers[1]}`;
+            generatedTask = `Реши задачу:   ${arrayOfNumbers[0]} ${randomSymbol} ${arrayOfNumbers[1]}`;
             result = arrayOfNumbers[0] * arrayOfNumbers[1];
             answer = +prompt(generatedTask);
-            if (result == answer) {
+            if (result === answer) {
                 alert('верный ответ');
                 break;
             } else {
@@ -77,7 +77,7 @@ function simpleArithmetic() {
                     while (result !== answer) {
                         answer = +prompt(generatedTask);
                         
-                        if (result == answer) {
+                        if (result === answer) {
                             alert('верный ответ');
                             break;
                         };
@@ -92,10 +92,19 @@ function simpleArithmetic() {
             };
 
         case '/':
-            generatedTask = `Реши задачу: ${arrayOfNumbers[0]} ${randomSymbol} ${arrayOfNumbers[1]}`;
-            result = arrayOfNumbers[0] / arrayOfNumbers[1];
-            answer = +prompt(generatedTask);
-            if (result == answer) {
+            if (arrayOfNumbers[0] < arrayOfNumbers[1]) {
+                generatedTask = `Реши задачу:   ${arrayOfNumbers[1]} ${randomSymbol} ${arrayOfNumbers[0]}   и округли до ближайшего целого числа`;
+                result = Math.round(arrayOfNumbers[1] / arrayOfNumbers[0]);
+                answer = +prompt(generatedTask);
+            };
+
+            if (arrayOfNumbers[0] >= arrayOfNumbers[1]) {
+                generatedTask = `Реши задачу:   ${arrayOfNumbers[0]} ${randomSymbol} ${arrayOfNumbers[1]}   и округли до ближайшего целого числа`;
+                result = Math.round(arrayOfNumbers[0] / arrayOfNumbers[1]);
+                answer = +prompt(generatedTask);
+            };
+
+            if (result === answer) {
                 alert('верный ответ');
                 break;
             } else {
@@ -104,7 +113,7 @@ function simpleArithmetic() {
                     while (result !== answer) {
                         answer = +prompt(generatedTask);
                         
-                        if (result == answer) {
+                        if (result === answer) {
                             alert('верный ответ');
                             break;
                         };
