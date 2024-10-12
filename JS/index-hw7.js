@@ -61,8 +61,6 @@ function minElement (arr) {
         if (el > maxValue) {
             maxValue = el;
         };
-
-        console.log(el, minValue, maxValue);
     };
 
     return `Минимальное значение: ${minValue}. максимальное значение: ${maxValue}`;
@@ -95,7 +93,7 @@ function randomArray (num) {
     return myArray;
 };
 
-console.log(randomArray(8));
+console.log(randomArray(9));
 
 // Задание 7
 function randomNumberRange (minnum, maxnum) {
