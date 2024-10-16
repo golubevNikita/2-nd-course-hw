@@ -89,7 +89,7 @@ function printDate(interval, duration) {
     }, duration * 1000);
 };
 
-printDate(3, 12);
+printDate(3, 30);
 
 // Задание 4
 function delayForSecond(callback) {
