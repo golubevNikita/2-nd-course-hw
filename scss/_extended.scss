@@ -1,0 +1,45 @@
+
+.forExtendedHW {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    };
+
+    &__demarcationLine {
+        border: 0.5px, #BDED35, solid;
+        margin-top: 30px;
+    };
+
+    &__title {
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 30px;
+    };
+
+    &__button {
+        color: #FFFFFF;
+        margin-top: 25px;
+        border: 1px, #FFFFFF, solid;
+        border-radius: 5px;
+        width: 300px;
+        height: 50px;
+        background: transparent;
+        cursor: pointer;
+    };
+};
+
+.forExtendedJS {
+    &__exerciseOne {
+        color: transparent;
+    };
+
+    &__exerciseSix {
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #FFFFFF;
+    };
+};
