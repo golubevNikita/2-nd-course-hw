@@ -238,7 +238,7 @@
 }
 .main__separate-line {
   content: "";
-  border-top: 0.5px solid rgb(32, 32, 39);
+  border-top: 0.5px solid transparent;
 }
 
 .games-info {
