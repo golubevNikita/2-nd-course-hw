@@ -1,21 +1,35 @@
 function predictNumber() {
     const generatedNumber = Math.floor(Math.random() * 100) + 1;
 
-    let number = +prompt('Попробуй угадать число от 1 до 100');
-    
-    while (generatedNumber !== number) {
-        if (number < generatedNumber) {
-            alert('Загаданное число больше');
-            number = +prompt('Ещё попытка');
-        };
-    
-        if (number > generatedNumber) {
-            alert('Загаданное число меьше');
-            number = +prompt('Ещё попытка');
-        };
-    
-        if (number === generatedNumber) {
-            alert('Правильно!');
-        };
-    };    
+    let userNumber = +prompt('Попробуй угадать число от 1 до 100');
+
+    if (userNumber === 0) {
+        alert('Тогда в другой раз');
+    } else {
+        while (generatedNumber !== userNumber) {
+            if (typeof(userNumber) !== 'number' || isNaN(userNumber)) {
+                alert('Ты ввёл не число');
+                userNumber = +prompt('Ещё попытка');
+            };
+
+            if (userNumber === 0)  {
+                alert('Тогда в другой раз');
+                break;
+            };
+
+            if (userNumber < generatedNumber) {
+                alert('Загаданное число больше');
+                userNumber = +prompt('Ещё попытка');
+            };
+        
+            if (userNumber > generatedNumber) {
+                alert('Загаданное число меьше');
+                userNumber = +prompt('Ещё попытка');
+            };
+        
+            if (userNumber === generatedNumber) {
+                alert('Правильно!');
+            };
+        };    
+    };
 };
